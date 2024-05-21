@@ -14,3 +14,4 @@ Features:
 5. Validation for Guest Details
 6. Check-in/Check-out Dates
 7. Admin Functionality
+8. Database for Storing Guests and Employees Data.
