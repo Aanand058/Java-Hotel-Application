@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="325.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AvailableRoomsController">
+   <children>
+      <Label layoutX="25.0" layoutY="14.0" prefHeight="17.0" prefWidth="161.0" text="Hotel Reservation System" underline="true">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="31.0" layoutY="55.0" prefHeight="17.0" prefWidth="150.0" text="No of Available rooms: " />
+      <Label fx:id="noOfRoomsLB" layoutX="158.0" layoutY="55.0" text="Label" />
+      <TableView fx:id="tableV" layoutX="31.0" layoutY="84.0" prefHeight="200.0" prefWidth="333.0">
+        <columns>
+          <TableColumn fx:id="roomTypeCol" prefWidth="159.0" text="Room Types" />
+          <TableColumn fx:id="noOfRoomsCol" minWidth="2.0" prefWidth="173.0" text="No of Rooms Available" />
+        </columns>
+      </TableView>
+      <Button layoutX="255.0" layoutY="292.0" mnemonicParsing="false" onAction="#mainMenu" text="Go to Main Menu" />
+   </children>
+</AnchorPane>
